@@ -20,7 +20,6 @@ func opp(dir int) int {
 	return 1 - dir
 }
 
-// single rotation
 func single(root *Node, dir int) *Node {
 	save := root.Link[opp(dir)]
 	root.Link[opp(dir)] = save.Link[dir]
