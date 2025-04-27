@@ -12,6 +12,7 @@ func prefixfoound(str []string) string {
 	sort.Strings(str)
 	fmt.Println(str)
 	left, right := str[0], str[len(str)-1]
+	fmt.Println(left, right)
 	i := 0
 	for i < len(left) && i < len(right) && left[i] == right[i] {
 		i++
@@ -21,5 +22,4 @@ func prefixfoound(str []string) string {
 func main() {
 	strArr := []string{"geeksforgeeks", "geeks", "geek", "geezer"}
 	fmt.Println(prefixfoound(strArr))
-
 }

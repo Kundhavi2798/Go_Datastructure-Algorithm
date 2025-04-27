@@ -12,7 +12,6 @@ func main() {
 
 	// arguments beyond running main.go
 	fmt.Println("beyond main.go\t", os.Args[1:])
-   a := map[int]int
 
 	// all arguments beyond running main.go
 	for i, v := range os.Args[1:] {

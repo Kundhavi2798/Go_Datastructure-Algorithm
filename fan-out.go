@@ -29,6 +29,7 @@ func main() {
 		ch1 <- i
 	}
 	close(ch1)
+
 	go func() {
 		wg.Wait()
 		close(ch2)

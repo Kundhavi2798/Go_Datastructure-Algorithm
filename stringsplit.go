@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	str := "..geeks..for.geeks."
+	str := "..geeks..for.ttar."
 	trimesplce := strings.Trim(str, ".")
 	fmt.Println(trimesplce)
 	splitStr := strings.Split(trimesplce, ".")
