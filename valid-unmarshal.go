@@ -12,12 +12,14 @@ type UserData struct {
 	PublishedYear int    `json:"PublishedYear"`
 }
 
-var JsonData = `[	{ID: 1, Title: "The Go Programming Language", Author: "Alan Donovan", PublishedYear: 2015},
-	{ID: 2, Title: "Clean Code", Author: "Robert C. Martin", PublishedYear: 2008}]`
+var JsonData = `[
+	{"ID": 1, "Title": "The Go Programming Language", "Author": "Alan Donovan", "PublishedYear": 2015},
+	{"ID": 2, "Title": "Clean Code", "Author": "Robert C. Martin", "PublishedYear": 2008}
+]`
 
 func main() {
 	var userData []UserData
-	err := json.Unmarshal([]byte(JsonData), userData)
+	err := json.Unmarshal([]byte(JsonData), &userData)
 	if err != nil {
 		fmt.Println("errors", err)
 	}

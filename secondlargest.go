@@ -42,7 +42,6 @@ func givenumrotate() {
 	fmt.Println("remainder", n, len(arr), arr[n:], arr[:n])
 	arr = append(arr[n:], arr[:n]...)
 	fmt.Println("reversed array based on target:", arr)
-
 }
 func nextPermutation(arr []int) {
 	n := len(arr)

@@ -5,9 +5,7 @@ import (
 )
 
 func print(n int) {
-
 	fmt.Println("number printing", n)
-
 }
 
 func main() {
@@ -18,5 +16,4 @@ func main() {
 	channel <- 2
 	fmt.Println("channel1", <-channel)
 	fmt.Println("channel2", <-channel)
-	//time.Sleep()
 }

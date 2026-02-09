@@ -3,9 +3,10 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/gorilla/mux"
 	"log"
 	"net/http"
+
+	"github.com/gorilla/mux"
 )
 
 type Messagescom struct {
@@ -40,7 +41,7 @@ func getData(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 	}
-	http.Error(w, "Message not found", http.StatusNotFound) // ✅ proper status
+	http.Error(w, "Message not found", http.StatusNotFound)
 }
 
 func main() {
