@@ -35,8 +35,7 @@ func longestPalindrome(s string) string {
 		}
 		seen[s[end]] = true
 	}
-			return val
-
+	return val
 }
 
 func main() {
